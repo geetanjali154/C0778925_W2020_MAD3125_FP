@@ -104,7 +104,7 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
                 Toast.makeText(AddNewInternetBillActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
             }
         });
-       
+        builder.create().show();
     }
 
 }
