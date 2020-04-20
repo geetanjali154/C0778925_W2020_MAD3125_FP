@@ -85,7 +85,7 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
                     //Hydro hydroo1 = new Hydro("HYDB0009", "16-Nov-2019", 9.00, "Planet Earth", 600);
                     Internet intt1 = new Internet(edtBillId2.getText().toString(), txtDate2.getText().toString(), Double.parseDouble(edtPrice2.getText().toString()), edtProvider.getText().toString(), Integer.parseInt(edtGb.getText().toString()));
                     c.addBill(intt1.getBillId(), intt1);
-                    //Intent hi = new Intent(AddNewInternetBillActivity.this, ShowBillDetailsActivity.class);
+                    Intent hi = new Intent(AddNewInternetBillActivity.this, ShowBillDetailsActivity.class);
                     startActivity(hi);
                 }
 
