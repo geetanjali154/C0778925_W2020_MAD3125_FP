@@ -54,11 +54,7 @@ public class CustomerListActivity extends AppCompatActivity {
         //actBar.setIcon(images);
 
         rvCustomersList = findViewById(R.id.rvCustomer);
-
         customersInfo();
-
-
-
         rvCustomersList.setAdapter(customersAdapter);
         customersAdapter = new CustomersAdapter(customers);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
@@ -67,10 +63,7 @@ public class CustomerListActivity extends AppCompatActivity {
     }
     private void customersInfo(){
         DataStorage.getInstance().loadDetails();
-
-        customers = new ArrayList<>(DataStorage.getInstance().getCustomer());
-
-
+       
     }
 
 
