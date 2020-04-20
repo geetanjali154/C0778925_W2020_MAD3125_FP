@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class DataStorage {
     private static DataStorage dataStorage = new DataStorage();
     //private ArrayList<Customer> customer = new ArrayList<>();
-    private HashMap<String, Customer> customers = new HashMap<>();
+  //  private HashMap<String, Customer> customers = new HashMap<>();
 
     public DataStorage() {
     }

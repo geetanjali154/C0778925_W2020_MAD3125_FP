@@ -45,7 +45,7 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
 
         cus = DataStorage.getInstance().getCustomer().get(getIntent().getIntExtra("customerSelected",selectItem));
 
-        
+
         txtName.setText("Name       :"+cus.getFullName());
         txtEmail.setText("Email ID   :"+cus.getEmail());
         txtBill.setText("Total Bill  :"+"$"+cus.getTotalAmountToPay().toString());
