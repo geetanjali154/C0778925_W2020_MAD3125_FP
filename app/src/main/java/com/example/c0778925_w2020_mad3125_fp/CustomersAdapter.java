@@ -29,7 +29,8 @@ public class CustomersAdapter extends RecyclerView.Adapter<CustomersAdapter.Cust
 
     @Override
     public void onBindViewHolder(@NonNull final CustomerViewHolder holder, final int position) {
-        
+        final Customer mCustomer = this.customersArrayList.get(position);
+        holder.txtCustomerName.setText(mCustomer.getFullName());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
