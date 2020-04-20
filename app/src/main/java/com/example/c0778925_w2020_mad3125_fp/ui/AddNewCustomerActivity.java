@@ -24,7 +24,16 @@ public class AddNewCustomerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_new_customer);
+        txtCustId=(EditText)findViewById(R.id.txtCustId);
+        txtFirstName=(EditText)findViewById(R.id.txtFirstName);
+        txtLastName=(EditText)findViewById(R.id.txtLastName);
+        txtId=(EditText)findViewById(R.id.txtId);
+        btnSubmit=(Button)findViewById(R.id.btnSubmit);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 if(txtCustId.getText().toString().isEmpty()){
                     alertBox("Please Enter Customer ID");
                 }
