@@ -45,9 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = null;
                     if(switch1.isChecked()){
                         final SharedPreferences preferences = getSharedPreferences("Switch", MODE_PRIVATE);
-                        editor = preferences.edit();
-                        editor.putString("geet@123", loginEmail.getText().toString());
-                        editor.putString("gupta",loginPwd.getText().toString());
+                       
                         editor.apply();
                         Intent mintent=new Intent(LoginActivity.this,CustomerListActivity.class);
                         startActivity(mintent);}
