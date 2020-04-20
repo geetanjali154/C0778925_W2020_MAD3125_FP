@@ -33,4 +33,93 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/toolbar4"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtBillId2"
+        android:layout_width="409dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Bill ID"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <TextView
+        android:id="@+id/txtDate2"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="---Select Bill Date---"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtProvider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBillId2" />
+
+    <EditText
+        android:id="@+id/edtProvider"
+        android:layout_width="407dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Enter Provider Name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtGb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate2" />
+
+    <EditText
+        android:id="@+id/edtGb"
+        android:layout_width="407dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Enter Gb Used"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPrice2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProvider" />
+
+    <EditText
+        android:id="@+id/edtPrice2"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="Enter Price per Gb"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtGb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="120dp"
+        android:text="btnSave2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrice2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
