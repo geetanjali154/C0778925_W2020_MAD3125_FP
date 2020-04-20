@@ -39,7 +39,7 @@ public class CustomersAdapter extends RecyclerView.Adapter<CustomersAdapter.Cust
                 //Customer cust = customersArrayList.get(position);
                 Intent sint = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
                 sint.putExtra("customerSelected", position);
-                holder.itemView.getContext().startActivity(sint);
+               // holder.itemView.getContext().startActivity(sint);
             }
         });
 
