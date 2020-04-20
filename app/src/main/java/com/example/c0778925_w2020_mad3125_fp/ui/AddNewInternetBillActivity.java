@@ -32,7 +32,7 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
     private TextView txtDate2;
     private Button btnSave2;
     public static Customer c;
-    public static int selectItem = 0;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
