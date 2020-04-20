@@ -63,7 +63,7 @@ public class CustomerListActivity extends AppCompatActivity {
     }
     private void customersInfo(){
         DataStorage.getInstance().loadDetails();
-       
+        customers = new ArrayList<>(DataStorage.getInstance().getCustomer());
     }
 
 
