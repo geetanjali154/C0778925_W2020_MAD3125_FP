@@ -16,7 +16,7 @@ public class Mobile extends Bill  {
         this.minuteUsed = minuteUsed;
     }
 
-    public String getMobileManufacturer() {
+    //public String getMobileManufacturer() {
         return mobileManufacturer;
     }
 
