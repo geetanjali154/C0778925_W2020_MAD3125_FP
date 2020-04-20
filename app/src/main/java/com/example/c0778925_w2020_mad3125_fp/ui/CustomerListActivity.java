@@ -62,7 +62,10 @@ public class CustomerListActivity extends AppCompatActivity {
 
 
         rvCustomersList.setAdapter(customersAdapter);
-
+        customersAdapter = new CustomersAdapter(customers);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        //GridLayoutManager mGridLayoutManager = new GridLayoutManager(this, 2);
+        rvCustomersList.setLayoutManager(mLayoutManager);
     }
     private void customersInfo(){
         DataStorage.getInstance().loadDetails();
