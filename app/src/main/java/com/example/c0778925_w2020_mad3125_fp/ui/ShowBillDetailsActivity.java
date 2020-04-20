@@ -36,7 +36,9 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-     
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_show_bill_details);
+        Toolbar toolbar=findViewById(R.id.toolbar2);
        setSupportActionBar(toolbar);
        toolbar.setTitle("Customer Details");
        txtBill=(TextView)findViewById(R.id.txtBill);
