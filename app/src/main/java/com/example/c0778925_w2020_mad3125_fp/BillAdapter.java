@@ -21,10 +21,7 @@ import com.example.c0778925_w2020_mad3125_fp.ui.LoginActivity;
 import java.util.ArrayList;
 
 public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder> {
-    private ArrayList<Bill> billsArrayList;
-    public BillAdapter(ArrayList<Bill> billsArrayList) {
-        this.billsArrayList = billsArrayList;
-    }
+   
     @NonNull
     @Override
     public BillViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
