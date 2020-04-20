@@ -66,6 +66,17 @@ public class AddNewHydroBillActivity extends AppCompatActivity {
         });
 
 
+        btnSave1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(edtBillId1.getText().toString().isEmpty()){
+                    alertBox("Please enter Bill ID");
+                } else if(txtDate1.getText().toString().isEmpty()){
+                    alertBox("Please enter Bill Date");
+                }  else if(edtAgencyName.getText().toString().isEmpty()){
+                    alertBox("Please enter Agency Name");
+                } else if(edtUnit.getText().toString().isEmpty()){
+                    alertBox("Please enter Unit Consumed");
                 }
                 else if(edtPrice.getText().toString().isEmpty()){
                     alertBox("Please enter Unit Price");
