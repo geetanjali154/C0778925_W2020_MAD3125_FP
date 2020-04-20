@@ -104,7 +104,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
                     startActivity(mo);
                 }
                 else{
-                   
+                    alertBox("Please Enter Valid Mobile Number");
                 }
 
             }
