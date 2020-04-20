@@ -75,8 +75,17 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
                     alertBox("Please enter Unit Price");
                 } else if(edtManufacturer.getText().toString().isEmpty()){
                     alertBox("Please enter Agency Name");
-                } else if(edtUnit.getText().toString().isEmpty()){
-                    alertBox("Please enter Unit Consumed");
+                } else if(edtMinutes.getText().toString().isEmpty()){
+                    alertBox("Please enter Minutes Consumed");
+                }
+                else if(edtGbUsed.getText().toString().isEmpty()){
+                    alertBox("Please enter Gb Consumed");
+                }
+                else if(edtMobile.getText().toString().isEmpty()){
+                    alertBox("Please enter Mobile Number");
+                }
+                else if(edtPlanName.getText().toString().isEmpty()){
+                    alertBox("Please enter PlanName");
                 }
                 else
 
