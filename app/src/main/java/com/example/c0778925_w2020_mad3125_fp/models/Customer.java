@@ -79,7 +79,7 @@ public class Customer implements Serializable {
     }
 
     public void setBills(HashMap<String, Bill> bills) {
-        //this.bills = bills;
+        this.bills = bills;
     }
 
     public Double getTotalAmountToPay() {
