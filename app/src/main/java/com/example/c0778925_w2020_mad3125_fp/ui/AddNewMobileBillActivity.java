@@ -71,7 +71,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
         });
 
 
-        ..btnSave3.setOnClickListener(new View.OnClickListener() {
+        btnSave3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(edtBillId3.getText().toString().isEmpty()){
