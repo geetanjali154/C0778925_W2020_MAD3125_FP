@@ -35,4 +35,135 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtBillID3"
+        android:layout_width="413dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter Bill ID"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtManufacturer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
+
+    <EditText
+        android:id="@+id/edtManufacturer"
+        android:layout_width="411dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Manufacturer Name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtMobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBillID3" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_width="411dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Mobile Number"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPlanName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtManufacturer" />
+
+    <EditText
+        android:id="@+id/edtPlanName"
+        android:layout_width="416dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Plan Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtMinutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMobile" />
+
+    <EditText
+        android:id="@+id/edtMinutes"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="Enter Minutes Used"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPrice3"
+        android:layout_width="416dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Rate Per Minute"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtGbUsed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMinutes" />
+
+    <EditText
+        android:id="@+id/edtGbUsed"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Gb Used"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDate3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrice3" />
+
+    <TextView
+        android:id="@+id/txtDate3"
+        android:layout_width="411dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="56dp"
+        android:text="---Select Bill Date---"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtGbUsed" />
+
+    <Button
+        android:id="@+id/btnSave3"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="67dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
