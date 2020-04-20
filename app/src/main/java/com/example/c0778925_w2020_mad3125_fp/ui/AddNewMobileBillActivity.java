@@ -69,7 +69,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(edtBillId3.getText().toString().isEmpty()){
                     alertBox("Please enter Bill ID");
-                } else if(txtDate1.getText().toString().isEmpty()){
+                } else if(txtDate3.getText().toString().isEmpty()){
                     alertBox("Please enter Bill Date");
                 } else if(edtPrice.getText().toString().isEmpty()){
                     alertBox("Please enter Unit Price");
