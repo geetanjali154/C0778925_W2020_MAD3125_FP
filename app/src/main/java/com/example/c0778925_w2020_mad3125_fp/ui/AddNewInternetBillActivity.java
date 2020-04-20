@@ -94,7 +94,7 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
 
     }
     public void alertBox(String msg){
-        AlertDialog.Builder builder= new AlertDialog.Builder(AddNewInternetBillActivity.this);
+       // AlertDialog.Builder builder= new AlertDialog.Builder(AddNewInternetBillActivity.this);
         builder.setTitle("Error");
         //builder.setIcon(R.drawable.ic_action_plus);
         builder.setMessage(msg);
