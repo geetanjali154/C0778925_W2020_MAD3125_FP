@@ -68,7 +68,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
                 Mobile mobile=(Mobile)bill;
                     AlertDialog.Builder builder= new AlertDialog.Builder(holder.itemView.getContext());
                     builder.setTitle("Details");
-                    builder.setMessage("Bill Date: "+bill.getBillDate()+"\nManufacturer Name"+mobile.getMobileManufacturer()+"\nMobile Number: "+mobile.getMobileNumber()+"\nPlan Name: "+mobile.getPlanName()+"\nMinutes Usage: "+mobile.getMinuteUsed()+"minutes"+"\nData Used"+mobile.getInternetGBUsed()+"Gb");
+                    builder.setMessage("Bill Date: "+bill.getBillDate()+"\nManufacturer Name"+mobile.getMobileManufacturer()+"\nMobile Number: "+mobile.getMobileNumber()+"\nPlan Name: "+mobile.getPlanName()+"\nMinutes Usage: "+mobile.getMinuteUsed()+"minutes"+"\nData Used: "+mobile.getInternetGBUsed()+"Gb");
                     builder.create().show();
                     // Toast.makeText(holder.itemView.getContext(),"Bill Date: "+bill.getBillDate()+"\nManufacturer Name"+mobile.getMobileManufacturer()+"\nMobile Number: "+mobile.getMobileNumber()+"\nPlan Name: "+mobile.getPlanName()+"\nMinutes Usage: "+mobile.getMinuteUsed()+"minutes"+"\nData Used"+mobile.getInternetGBUsed()+"Gb",Toast.LENGTH_LONG).show();
                 }

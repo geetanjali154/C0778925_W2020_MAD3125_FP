@@ -41,8 +41,8 @@ public class DataStorage {
         Internet internet2 = new Internet("INTB0002", "20-Aug-2019", 36.00, "Bell", 400);
         Internet internet3 = new Internet("INTB0003", "25-Dec-2019", 24.00, "Fido", 350);
 
-        Hydro hydro1 = new Hydro("HYDB0001", "16-Nov-2019", 9.00, "Planet Earth", 600);
-        Hydro hydro2 = new Hydro("HYDB0002", "15-Sep-2019", 12.00, "Bruce Power", 500);
+        Hydro hydro1 = new Hydro("HYDB0001", "16-Nov-2019", 9.00, "Corp Agency", 600);
+        Hydro hydro2 = new Hydro("HYDB0002", "15-Sep-2019", 12.00, "Canada Power", 500);
 
         Mobile mobile = new Mobile("MOBB0001","11-Jun-2019", 7.60,"Samsung", "LTE+3G 9.5GB Promo", "9753186420", 4, 230);
 

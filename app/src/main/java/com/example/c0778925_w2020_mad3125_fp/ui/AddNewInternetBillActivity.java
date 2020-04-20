@@ -71,12 +71,13 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
                     alertBox("Please enter Bill ID");
                 } else if(txtDate2.getText().toString().isEmpty()){
                     alertBox("Please enter Bill Date");
-                } else if(edtPrice2.getText().toString().isEmpty()){
-                    alertBox("Please enter Rate per Gb");
-                } else if(edtProvider.getText().toString().isEmpty()){
+                }  else if(edtProvider.getText().toString().isEmpty()){
                     alertBox("Please enter Provider Name");
                 } else if(edtGb.getText().toString().isEmpty()){
                     alertBox("Please enter Gb Used");
+                }
+                else if(edtPrice2.getText().toString().isEmpty()){
+                    alertBox("Please enter Rate per Gb");
                 }
                 else
 

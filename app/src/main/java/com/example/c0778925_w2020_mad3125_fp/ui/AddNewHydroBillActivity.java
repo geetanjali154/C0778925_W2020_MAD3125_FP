@@ -73,12 +73,13 @@ public class AddNewHydroBillActivity extends AppCompatActivity {
                     alertBox("Please enter Bill ID");
                } else if(txtDate1.getText().toString().isEmpty()){
                     alertBox("Please enter Bill Date");
-                } else if(edtPrice.getText().toString().isEmpty()){
-                    alertBox("Please enter Unit Price");
-                } else if(edtAgencyName.getText().toString().isEmpty()){
+                }  else if(edtAgencyName.getText().toString().isEmpty()){
                     alertBox("Please enter Agency Name");
                 } else if(edtUnit.getText().toString().isEmpty()){
                     alertBox("Please enter Unit Consumed");
+                }
+                else if(edtPrice.getText().toString().isEmpty()){
+                    alertBox("Please enter Unit Price");
                 }
                 else
 

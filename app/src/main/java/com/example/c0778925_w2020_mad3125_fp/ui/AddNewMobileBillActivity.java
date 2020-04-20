@@ -18,6 +18,7 @@ import com.example.c0778925_w2020_mad3125_fp.R;
 import com.example.c0778925_w2020_mad3125_fp.models.Customer;
 import com.example.c0778925_w2020_mad3125_fp.models.DataStorage;
 import com.example.c0778925_w2020_mad3125_fp.models.Hydro;
+import com.example.c0778925_w2020_mad3125_fp.models.Mobile;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -93,14 +94,17 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
                 else if(edtPlanName.getText().toString().isEmpty()){
                     alertBox("Please enter PlanName");
                 }
-                else
 
-                {
+
+                else if(edtMobile.getText().toString().matches("[0-9]{10}")) {
                     //Hydro hydroo1 = new Hydro("HYDB0009", "16-Nov-2019", 9.00, "Planet Earth", 600);
-
+                    Mobile mob1 = new Mobile(edtBillId3.getText().toString(),txtDate3.getText().toString(),Double.parseDouble(edtPrice3.getText().toString()), edtManufacturer.getText().toString(),edtPlanName.getText().toString(),edtMobile.getText().toString(),Integer.parseInt(edtGbUsed.getText().toString()), Integer.parseInt(edtMinutes.getText().toString()));
                     c.addBill(mob1.getBillId(), mob1);
-                    Intent h = new Intent(AddNewMobileBillActivity.this, ShowBillDetailsActivity.class);
-                    startActivity(h);
+                    Intent mo = new Intent(AddNewMobileBillActivity.this, ShowBillDetailsActivity.class);
+                    startActivity(mo);
+                }
+                else{
+                    alertBox("Please Enter Valid Mobile Number");
                 }
 
             }
