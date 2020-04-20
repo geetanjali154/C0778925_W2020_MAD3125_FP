@@ -37,5 +37,15 @@ public class Bill implements Serializable {
         return billType;
     }
 
-   
+    public void setBillType(String billType) {
+        this.billType = billType;
+    }
+
+    public Double getTotalBillAmount() {
+        return totalBillAmount;
+    }
+
+    public void setTotalBillAmount(Double totalBillAmount) {
+        this.totalBillAmount = totalBillAmount;
+    }
 }
