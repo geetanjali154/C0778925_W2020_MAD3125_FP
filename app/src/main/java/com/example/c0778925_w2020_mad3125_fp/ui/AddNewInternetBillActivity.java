@@ -93,19 +93,7 @@ public class AddNewInternetBillActivity extends AppCompatActivity {
         });
 
     }
-    public void alertBox(String msg){
-        AlertDialog.Builder builder= new AlertDialog.Builder(AddNewInternetBillActivity.this);
-        builder.setTitle("Error");
-        //builder.setIcon(R.drawable.ic_action_plus);
-        builder.setMessage(msg);
-        builder.setCancelable(false);
-        builder.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(AddNewInternetBillActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
-            }
-        });
-        builder.create().show();
+  
     }
 
 }
