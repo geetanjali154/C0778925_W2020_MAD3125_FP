@@ -42,7 +42,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
         txtDate3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatePickerDialog dialog = new DatePickerDialog(AddNewHydroBillActivity.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog dialog = new DatePickerDialog(AddNewMobileBillActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
