@@ -87,7 +87,8 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
                 Intent i5 = new Intent(ShowBillDetailsActivity.this, AddNewInternetBillActivity.class);
                 startActivity(i5);
                 return true;
-           
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
