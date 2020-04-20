@@ -82,20 +82,7 @@ public class Customer implements Serializable {
         this.bills = bills;
     }
 
-    public Double getTotalAmountToPay() {
-        return totalAmountToPay;
-    }
-
-    public void setTotalAmountToPay(Double totalAmountToPay) {
-        this.totalAmountToPay = totalAmountToPay;
-    }
-
-    private String calculateFullName(){
-        String fullName;
-        fullName = firstName + " " + lastName;
-        return fullName;
-    }
-
+  
 
 }
 
