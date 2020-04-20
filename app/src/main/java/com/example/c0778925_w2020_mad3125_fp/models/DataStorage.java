@@ -12,14 +12,6 @@ public class DataStorage {
     public DataStorage() {
     }
 
-    public static DataStorage getInstance(){
-        return dataStorage;
-    }
-
-    public void addCustomer(String customerId, Customer customer1){
-        this.customers.put(customerId,customer1);
-    }
-
     public ArrayList<Customer> getCustomer(){       // //http://mandarshinde.com/convert-hashmap-arraylist/
         Collection<Customer> collection = customers.values();
         ArrayList<Customer> customerArrayList = new ArrayList<Customer>(collection);
