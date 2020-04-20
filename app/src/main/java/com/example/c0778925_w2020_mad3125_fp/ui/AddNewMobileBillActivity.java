@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.c0778925_w2020_mad3125_fp.R;
+import com.example.c0778925_w2020_mad3125_fp.models.Customer;
+import com.example.c0778925_w2020_mad3125_fp.models.DataStorage;
 import com.example.c0778925_w2020_mad3125_fp.models.Hydro;
 
 import java.text.SimpleDateFormat;
@@ -31,6 +33,9 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
     private EditText edtGbUsed;
     private TextView txtDate3;
     private Button btnSave3;
+    public static Customer c;
+    public static int selectItem = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +49,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
         edtGbUsed=(EditText)findViewById(R.id.edtGbUsed);
         txtDate3=(TextView)findViewById(R.id.txtDate3);
         btnSave3=(Button)findViewById(R.id.btnSave3);
+        c = DataStorage.getInstance().getCustomer().get(getIntent().getIntExtra("customerSelected",selectItem));
         txtDate3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,9 +97,9 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
 
                 {
                     //Hydro hydroo1 = new Hydro("HYDB0009", "16-Nov-2019", 9.00, "Planet Earth", 600);
-                    Hydro hydroo1 = new Hydro(edtBillId1.getText().toString(), txtDate1.getText().toString(), Double.parseDouble(edtPrice.getText().toString()), edtAgencyName.getText().toString(), Integer.parseInt(edtUnit.getText().toString()));
-                    c.addBill(hydroo1.getBillId(), hydroo1);
-                    Intent h = new Intent(AddNewHydroBillActivity.this, ShowBillDetailsActivity.class);
+
+                    c.addBill(mob1.getBillId(), mob1);
+                    Intent h = new Intent(AddNewMobileBillActivity.this, ShowBillDetailsActivity.class);
                     startActivity(h);
                 }
 
@@ -102,7 +108,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
 
     }
     public void alertBox(String msg){
-        AlertDialog.Builder builder= new AlertDialog.Builder(AddNewHydroBillActivity.this);
+        AlertDialog.Builder builder= new AlertDialog.Builder(AddNewMobileBillActivity.this);
         builder.setTitle("Error");
         //builder.setIcon(R.drawable.ic_action_plus);
         builder.setMessage(msg);
@@ -110,7 +116,7 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
         builder.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(AddNewHydroBillActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddNewMobileBillActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
             }
         });
         builder.create().show();
