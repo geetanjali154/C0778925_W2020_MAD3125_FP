@@ -7,7 +7,7 @@ public class Mobile extends Bill  {
     private int internetGBUsed;
     private int minuteUsed;
 
-    //public Mobile(String billId, String billDate, Double ratePerMinute, String mobileManufacturer, String planName, String mobileNumber, int internetGBUsed, int minuteUsed) {
+    public Mobile(String billId, String billDate, Double ratePerMinute, String mobileManufacturer, String planName, String mobileNumber, int internetGBUsed, int minuteUsed) {
         super(billId, billDate, "Mobile",(ratePerMinute*minuteUsed)+(15*internetGBUsed));
         this.mobileManufacturer = mobileManufacturer;
         this.planName = planName;
