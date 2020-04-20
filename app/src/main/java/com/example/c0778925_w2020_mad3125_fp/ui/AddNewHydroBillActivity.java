@@ -37,7 +37,7 @@ public class AddNewHydroBillActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_hydro_bill);
-        
+        edtBillId1=(EditText)findViewById(R.id.edtBillId1);
         edtAgencyName=(EditText) findViewById(R.id.edtAgencyName);
         edtUnit=(EditText)findViewById(R.id.edtUnits);
         edtPrice=(EditText)findViewById(R.id.edtPrice);
