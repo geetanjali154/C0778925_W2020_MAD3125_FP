@@ -27,7 +27,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
     public BillViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View mView1 = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_bill_info, parent, false);
         BillViewHolder mBillViewHolder = new BillViewHolder(mView1);
-        return mBillViewHolder;
+       // return mBillViewHolder;
     }
 
     @Override
