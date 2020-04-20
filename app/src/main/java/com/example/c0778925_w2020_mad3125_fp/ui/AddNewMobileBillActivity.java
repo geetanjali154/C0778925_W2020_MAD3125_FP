@@ -58,7 +58,8 @@ public class AddNewMobileBillActivity extends AppCompatActivity {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
-                       
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(year, month, dayOfMonth);
                         Date date = calendar.getTime();
                         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
                         String s = dateFormat.format(date);
