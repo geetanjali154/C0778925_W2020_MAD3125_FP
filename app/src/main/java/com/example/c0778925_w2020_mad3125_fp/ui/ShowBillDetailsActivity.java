@@ -38,7 +38,7 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_show_bill_details);
         Toolbar toolbar=findViewById(R.id.toolbar2);
        setSupportActionBar(toolbar);
-       toolbar.setTitle("Customer Details");
+      // toolbar.setTitle("Customer Details");
        txtBill=(TextView)findViewById(R.id.txtBill);
        txtEmail=(TextView)findViewById(R.id.txtEmail);
        txtName=(TextView)findViewById(R.id.txtName);
