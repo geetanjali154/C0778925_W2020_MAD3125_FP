@@ -68,7 +68,10 @@ public class LoginActivity extends AppCompatActivity {
         //builder.setIcon(R.drawable.ic_action_plus);
         builder.setMessage(msg);
         builder.setCancelable(false);
-      
+        builder.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(LoginActivity.this,"Cancel",Toast.LENGTH_SHORT).show();
             }
         });
         builder.create().show();
