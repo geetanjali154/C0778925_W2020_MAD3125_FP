@@ -2,10 +2,8 @@ package com.example.c0778925_w2020_mad3125_fp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-import com.example.c0778925_w2020_mad3125_fp.BillAdapter;
+import com.example.c0778925_w2020_mad3125_fp.adapters.BillAdapter;
 import com.example.c0778925_w2020_mad3125_fp.R;
 import com.example.c0778925_w2020_mad3125_fp.models.Bill;
 import com.example.c0778925_w2020_mad3125_fp.models.Customer;

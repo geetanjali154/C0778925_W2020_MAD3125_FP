@@ -1,4 +1,4 @@
-package com.example.c0778925_w2020_mad3125_fp;
+package com.example.c0778925_w2020_mad3125_fp.adapters;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.c0778925_w2020_mad3125_fp.R;
 import com.example.c0778925_w2020_mad3125_fp.models.Customer;
 import com.example.c0778925_w2020_mad3125_fp.ui.ShowBillDetailsActivity;
 

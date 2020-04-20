@@ -1,8 +1,6 @@
 package com.example.c0778925_w2020_mad3125_fp.ui;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +10,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
-import com.example.c0778925_w2020_mad3125_fp.CustomersAdapter;
+import com.example.c0778925_w2020_mad3125_fp.adapters.CustomersAdapter;
 import com.example.c0778925_w2020_mad3125_fp.R;
 import com.example.c0778925_w2020_mad3125_fp.models.Customer;
 import com.example.c0778925_w2020_mad3125_fp.models.DataStorage;
