@@ -46,6 +46,15 @@ public class CustomersAdapter extends RecyclerView.Adapter<CustomersAdapter.Cust
     }
 
     @Override
-   
+    public int getItemCount() {
+        return this.customersArrayList.size();
+    }
+
+    public class CustomerViewHolder extends RecyclerView.ViewHolder {
+        TextView txtCustomerName;
+        public CustomerViewHolder(@NonNull View itemView) {
+            super(itemView);
+            txtCustomerName = itemView.findViewById(R.id.txtCustomerName);
+        }
     }
 }
